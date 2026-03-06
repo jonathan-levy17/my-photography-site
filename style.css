@@ -80,13 +80,23 @@ header {
     object-position: center;
 }
 
+.profile-pic {
+    display: block;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto 20px; 
+}   
+
 #logo {
     text-align: center;
     margin: 40px 0;
 }   
 
 #logo img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
 }
 
