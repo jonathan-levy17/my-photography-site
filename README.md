@@ -4,8 +4,8 @@ A simple personal photography portfolio website built with HTML, CSS, and JavaSc
 
 The site acts as a digital business card where visitors can:
 - View selected photography work
-- Learn about the photographer
 - Access contact information and social media links
+- Learn About Me
 
 ---
 
@@ -15,7 +15,7 @@ The site acts as a digital business card where visitors can:
 - CSS
 - JavaScript
 - Git / GitHub
-- GitHub Pages (for deployment)
+- GitHub Pages 
 
 ---
 
@@ -31,14 +31,7 @@ my-photography-site
 - `index.html` — main webpage structure  
 - `style.css` — styling and layout rules  
 - `script.js` — JavaScript interactions  
-- `images/` — photography images used in the gallery
-
----
-
-## Running the Project
-
-Clone the repository
-
+- `images/` —  icons and gallary Photos
 ---
 
 ## Future Improvements
@@ -46,6 +39,8 @@ Clone the repository
 Possible additions:
 
 - Expanded photo gallery
+- Lightbox
+- Music
 - Dedicated "About" page
-- Animations
+- Dedicated "Dev" Page
 - Responsive improvements
