@@ -31,7 +31,7 @@ my-photography-site
 - `index.html` — main webpage structure  
 - `style.css` — styling and layout rules  
 - `script.js` — JavaScript interactions  
-- `images/` —  cons and gallary Photos
+- `images/` —  icons and gallary Photos
 ---
 
 ## Future Improvements
