@@ -56,5 +56,10 @@ header {
 #about {
     max-width: 650px; 
     margin: 40px auto; 
-    padding: 0 20px; 
+    padding: 32x 20px 0; 
+}
+
+#gallery h2,
+#about h2 {
+    margin-bottom: 0;
 }
