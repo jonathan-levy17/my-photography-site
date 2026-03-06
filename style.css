@@ -1,6 +1,5 @@
 /* This is the main style.css file for Jonathan Levy's photography website */
 
-/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +13,6 @@ body {
     color: #111111;
 }
 
-/*sticky header styles*/
 header {
     position: sticky;
     top: 0;
@@ -50,8 +48,6 @@ header {
     height: 32px;
 }
 
-/* Gallery and About styles */
-/* Center main content sections */
 #gallery {
     max-width: none; 
     margin: 40px auto; 
