@@ -82,13 +82,13 @@ header {
 
 .profile-pic {
     display: block;
-    width: 500px;
-    height: 500px;
+    width: min(380px, 90%);
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
-    margin: 0 auto 20px; 
-}   
+    margin: 0 auto 20px;
+}
 
 #logo {
     text-align: center;
