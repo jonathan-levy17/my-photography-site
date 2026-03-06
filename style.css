@@ -1,0 +1,13 @@
+/* This is the main style.css file for Jonathan Levy's photography website */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f8f2f2;
+    color: #111111;
+}
