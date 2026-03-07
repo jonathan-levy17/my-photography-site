@@ -8,6 +8,10 @@ const about = document.getElementById("about");
 
 const logo = document.getElementById("logo");
 
+const galleryImages = document.querySelectorAll(".gallery-grid img");
+
+const shareButton = document.getElementById("shareButton");
+
 let galleryInview = false;
 
 let aboutInview = false;
@@ -24,7 +28,11 @@ window.addEventListener("scroll", () => {
     }
 });
 
-const shareButton = document.getElementById("shareButton");
+galleryImages.forEach(function(img) {
+    img.addEventListener("click", function() {
+        img.classList.toggle("clicked");
+    });
+});
 
 if (shareButton) {
     shareButton.addEventListener("click", () => {
@@ -32,6 +40,14 @@ if (shareButton) {
         alert("Page link copied to clipboard");
     });
 }
+
+window.addEventListener("load", function() {
+    const images = document.querySelectorAll(".gallery-grid img");
+
+    images.forEach(function(img) {
+        img.style.opacity = "1";
+    });
+});
 
 const observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {

@@ -81,6 +81,8 @@ header.header-scrolled {
 }
 
 .gallery-grid img {
+    opacity: 0;
+    transition: opacity 1s ease;
     display: block;
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -106,6 +108,10 @@ header.header-scrolled {
 
 .gallery-grid a:active img {
     filter: grayscale(100%);
+}
+
+.gallery-grid a:focus img {
+    border-color: transparent;
 }
 
 .profile-pic {
