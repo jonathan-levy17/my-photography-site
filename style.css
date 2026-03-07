@@ -101,17 +101,20 @@ header.header-scrolled {
     transition: transform 0.2s ease, border-color 0.2s ease, filter 0.2s ease;
 }
 
-.gallery-grid a:hover img {
-    border-color: #111111;
-    transform: scale(1.08);
-}
-
 .gallery-grid a:active img {
     filter: grayscale(100%);
 }
 
 .gallery-grid a:focus img {
     border-color: transparent;
+    transform: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .gallery-grid a:hover img {
+        border-color: #111111;
+        transform: scale(1.08);
+    }
 }
 
 .profile-pic {
@@ -139,7 +142,7 @@ header.header-scrolled {
 
 #logo {
     text-align: center;
-    margin: 300px auto 150px;
+    margin: 300px auto 110px;
 }   
 
 #logo img {
@@ -167,3 +170,4 @@ footer p {
     font-size: 0.775rem;
     color: #555555;
 }   
+
