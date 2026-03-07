@@ -74,7 +74,7 @@ header.header-scrolled {
     text-align: center;
 }
 
-.gallery-grid {
+.gallery-grid  {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
@@ -86,6 +86,26 @@ header.header-scrolled {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: center;
+}
+
+.gallery-grid a {
+    display: block;
+    text-decoration: none;
+    line-height: 0;
+}
+
+.gallery-grid a img {
+    border: 5px solid transparent;
+    transition: transform 0.2s ease, border-color 0.2s ease, filter 0.2s ease;
+}
+
+.gallery-grid a:hover img {
+    border-color: #111111;
+    transform: scale(1.08);
+}
+
+.gallery-grid a:active img {
+    filter: grayscale(100%);
 }
 
 .profile-pic {
@@ -102,7 +122,7 @@ header.header-scrolled {
 #logo {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: opacity 1.2s ease, transform 1.2s ease;
 }
 
 #about.visible,

@@ -33,8 +33,8 @@ if (shareButton) {
     });
 }
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
         if (entry.target.id === "gallery") {
             galleryInview = entry.isIntersecting;
         }
