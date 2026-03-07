@@ -94,6 +94,7 @@ header.header-scrolled {
     display: block;
     text-decoration: none;
     line-height: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .gallery-grid a img {
@@ -101,15 +102,29 @@ header.header-scrolled {
     transition: transform 0.2s ease, border-color 0.2s ease, filter 0.2s ease;
 }
 
-.gallery-grid a:focus img {
+.gallery-grid a:focus img,
+.gallery-grid a:focus-visible img {
     border-color: transparent;
     transform: none;
+    filter: none;
 }
 
 @media (hover: hover) and (pointer: fine) {
     .gallery-grid a:hover img {
         border-color: #111111;
         transform: scale(1.08);
+    }
+}
+
+@media (hover: none), (pointer: coarse) {
+    .gallery-grid a img,
+    .gallery-grid a:hover img,
+    .gallery-grid a:focus img,
+    .gallery-grid a:focus-visible img,
+    .gallery-grid a:active img {
+        border-color: transparent;
+        transform: none;
+        filter: none;
     }
 }
 
