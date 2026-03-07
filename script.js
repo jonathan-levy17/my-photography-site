@@ -2,6 +2,18 @@
 
 const header = document.querySelector("header");
 
+const gallery = document.getElementById("gallery");
+
+const about = document.getElementById("about");
+
+const logo = document.getElementById("logo");
+
+let galleryInview = false;
+
+let aboutInview = false;
+
+let logoInview = false;
+
 window.addEventListener("scroll", () => {
     if (!header) return;
 
@@ -20,3 +32,44 @@ if (shareButton) {
         alert("Page link copied to clipboard");
     });
 }
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.target.id === "gallery") {
+            galleryInview = entry.isIntersecting;
+        }
+        if (entry.target.id === "about") {
+            aboutInview = entry.isIntersecting;
+        }
+        if (entry.target.id === "logo") {
+            logoInview = entry.isIntersecting;
+        }
+    });
+    updateVisibility();
+}, {
+    threshold: 0.2,
+});
+
+function updateVisibility() {
+    if (galleryInview) {
+        gallery.classList.add("visible");
+    } else {
+        gallery.classList.remove("visible");
+    }
+    if (aboutInview) {
+        about.classList.add("visible");
+    } else {
+        about.classList.remove("visible");
+    }
+    if (logoInview) {
+        logo.classList.add("visible");
+    } else {
+        logo.classList.remove("visible");
+    }
+}
+
+observer.observe(gallery);
+observer.observe(about);
+observer.observe(logo);
+
+updateVisibility();
