@@ -1,6 +1,6 @@
 # My Photography Site
 
-A simple personal photography portfolio website built with HTML, CSS, and JavaScript.
+A simple personal photography portfolio website built with HTML, CSS, and JavaScript. This project has been tested on Desktop and Mobile but has been designed with the intention to be primarly viewed on mobile devices.
 
 The site acts as a digital business card where visitors can:
 - View selected photography work
