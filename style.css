@@ -101,10 +101,6 @@ header.header-scrolled {
     transition: transform 0.2s ease, border-color 0.2s ease, filter 0.2s ease;
 }
 
-.gallery-grid a:active img {
-    filter: grayscale(100%);
-}
-
 .gallery-grid a:focus img {
     border-color: transparent;
     transform: none;
