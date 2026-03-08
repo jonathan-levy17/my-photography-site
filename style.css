@@ -59,7 +59,7 @@ header.header-scrolled {
 
 #gallery {
     margin:  auto; 
-    padding:  0 10px; 
+    padding:  30px 10px; 
 }
 
 #about {
@@ -143,6 +143,12 @@ header.header-scrolled {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1.2s ease, transform 1.2s ease;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #about.visible,
@@ -153,12 +159,37 @@ header.header-scrolled {
 
 #logo {
     text-align: center;
-    margin: 300px auto 110px;
+    
 }   
 
 #logo img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    #gallery {
+        padding: 20px 10px;
+    }
+
+    #about {
+        margin: 120px auto;
+        padding: 32px 24px 0;
+    }
+
+    #logo {
+        margin: 180px auto 1px; 
+    }
+}
+
+@media (min-width: 900px) {
+    #about {
+        margin: 280px auto;
+    }
+
+    #logo {
+        margin: 420px auto 1px;
+    }
 }
 
 footer {
@@ -181,4 +212,3 @@ footer p {
     font-size: 0.775rem;
     color: #555555;
 }   
-

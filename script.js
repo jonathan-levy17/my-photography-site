@@ -28,12 +28,6 @@ window.addEventListener("scroll", () => {
     }
 });
 
-galleryImages.forEach(function(img) {
-    img.addEventListener("click", function() {
-        img.classList.toggle("clicked");
-    });
-});
-
 if (shareButton) {
     shareButton.addEventListener("click", () => {
         navigator.clipboard.writeText(window.location.href);
